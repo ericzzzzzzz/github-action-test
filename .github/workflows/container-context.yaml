@@ -21,7 +21,7 @@ jobs:
         uses: "docker://ubuntu:22.04"
         with:
           entrypoint: bash
-          args: "-c 'echo 111 >> bbb.txt'"
+          args: "-c \"echo 111 >> bbb.txt\""
       - name: docker-image-2
         uses: "docker://ubuntu:22.04"
         with:
