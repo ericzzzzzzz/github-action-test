@@ -14,15 +14,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - uses: actions/setup-go@v5
-        with:
-          go-version: '>=1.17.0'
+      - run: |
+          rm $(which docker)
       - name: docker-image
         uses: "docker://ubuntu:22.04"
         with:
           entrypoint: bash
           args: "-c \"echo 111 >> bbb.txt\""
-      - name: docker-image-2
-        uses: "docker://ubuntu:22.04"
-        with:
-          args: "cat bbb.txt"
