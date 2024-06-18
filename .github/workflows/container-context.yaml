@@ -1,7 +1,6 @@
 name: action (linux)
 
-# Triggers the workflow on push or pull request events
-on: [push, pull_request]
+on: [pull_request]
 
 permissions: read-all
 
@@ -21,4 +20,4 @@ jobs:
       - name: docker-image
         uses: "docker://ubuntu:22.04"
         with:
-          args: "bash -c 'which go'"
+          args: "printenv"
