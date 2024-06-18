@@ -20,6 +20,6 @@ jobs:
       - name: docker-image
         uses: "docker://ubuntu:22.04"
         with:
-          args: "ls /github/file_commands"
+          args: "ls /github/home"
           AAA: BBB
           BBB: CCC
