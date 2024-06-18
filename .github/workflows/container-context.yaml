@@ -20,7 +20,7 @@ jobs:
       - name: docker-image
         uses: "docker://ubuntu:22.04"
         with:
-          args: "echo -- 111 >> bbb.txt"
+          args: "echo 111 >> bbb.txt && cat bbb.txt"
       - name: docker-image-2
         uses: "docker://ubuntu:22.04"
         with:
