@@ -20,6 +20,6 @@ jobs:
       - name: docker-image
         uses: "docker://ubuntu:22.04"
         with:
-          args: "printenv"
+          args: "ls /github/file_commands"
           AAA: BBB
           BBB: CCC
