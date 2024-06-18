@@ -21,3 +21,5 @@ jobs:
         uses: "docker://ubuntu:22.04"
         with:
           args: "printenv"
+          AAA: BBB
+          BBB: CCC
