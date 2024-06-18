@@ -21,5 +21,4 @@ jobs:
       - name: docker-image
         uses: "docker://ubuntu:22.04"
         with:
-          entrypoint: bash
-          args: "-c 'which go'"
+          args: "bash -c 'which go'"
