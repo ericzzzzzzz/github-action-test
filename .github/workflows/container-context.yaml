@@ -15,7 +15,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - run: |
-          sudo apt remove docker
+          which docker
       - name: docker-image
         uses: "docker://ubuntu:22.04"
         with:
