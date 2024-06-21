@@ -21,5 +21,7 @@ jobs:
           echo $PATH
       - name: docker-image
         uses: "docker://ubuntu:22.04"
+        env:
+          PATH: $PATH
         with:
           entrypoint: printenv
