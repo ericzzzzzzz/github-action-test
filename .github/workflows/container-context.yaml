@@ -19,5 +19,4 @@ jobs:
       - name: docker-image
         uses: "docker://ubuntu:22.04"
         with:
-          entrypoint: bash
-          args: "-c \"echo 111 >> bbb.txt\""
+          entrypoint: printenv
