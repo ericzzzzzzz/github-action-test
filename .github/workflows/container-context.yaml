@@ -22,6 +22,6 @@ jobs:
       - name: docker-image
         uses: "docker://ubuntu:22.04"
         env:
-          PATH: $PATH
+          PATH: ${{ env.PATH }}
         with:
           entrypoint: printenv
